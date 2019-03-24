@@ -1,4 +1,4 @@
-export const isConstructable = fn => {
+const isConstructable = fn => {
     try {
         Reflect.construct(String, [], fn);
     } catch (e) {
