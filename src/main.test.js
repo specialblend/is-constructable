@@ -1,6 +1,6 @@
 /* eslint-disable no-undefined */
 import { Callable } from '@specialblend/callable';
-import { isConstructable } from './is-constructable';
+import isConstructable from './main';
 
 const constructables = [
     Number,
