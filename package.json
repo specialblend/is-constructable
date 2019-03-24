@@ -1,0 +1,51 @@
+{
+  "main": "index.js",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "eslint .",
+    "build": "webpack",
+    "check": "npm run build && npm run test && npm run coverage && npm run lint",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "name": "@specialblend/is-constructable",
+  "description": "check if provided function is constructable (can be called with new keyword)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://specialblend@github.com/specialblend/is-constructable.git"
+  },
+  "keywords": [
+    "function",
+    "class",
+    "constructor",
+    "constructable",
+    "new"
+  ],
+  "author": "cj@specialblend.net",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/specialblend/is-constructable/issues"
+  },
+  "homepage": "https://github.com/specialblend/is-constructable#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.2",
+    "@specialblend/callable": "0.0.5",
+    "@specialblend/eslint-config": "0.0.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.15.3",
+    "eslint-plugin-babel": "^5.3.0",
+    "jest": "^24.5.0",
+    "jest-extended": "^0.11.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
